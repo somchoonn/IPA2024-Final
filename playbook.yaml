@@ -14,4 +14,4 @@
     - name: SAVE OUTPUT TO FILE
       copy:
         content: "{{ output.stdout[0] }}"
-        dest: "show_run_66070247_CSR1KV-Pod1-1.txt"
+        dest: "show_run_66070247_R1-Exam.txt"
