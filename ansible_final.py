@@ -9,5 +9,5 @@ def showrun():
     if 'ok=2' in result:
         return 'ok'
     else:
-        return 'error'
+        return 'Error: Ansible'
 # showrun()
