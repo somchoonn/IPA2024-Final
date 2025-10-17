@@ -8,6 +8,8 @@ import os,json,time
 import requests
 from requests_toolbelt.multipart.encoder import MultipartEncoder    
 from restconf_final import create, delete, enable, disable, status
+from netmiko_final import gigabit_status
+from ansible_final import showrun
 from dotenv import load_dotenv
 load_dotenv()
 #######################################################################################
@@ -84,9 +86,9 @@ while True:
         elif command == "status":
             responseMessage = status()
         elif command == "gigabit_status":
-            responseMessage = "Part 2 - gigabit_status"
+            responseMessage = gigabit_status()
         elif command == "showrun":
-            responseMessage = "Part 2 - showrun"
+            responseMessage = showrun()
         else:
             responseMessage = "Error: No command or unknown command"
         
