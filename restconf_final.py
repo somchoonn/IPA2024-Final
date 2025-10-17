@@ -2,7 +2,8 @@ import json
 import requests
 import os
 requests.packages.urllib3.disable_warnings()
-
+from dotenv import load_dotenv
+load_dotenv()
 # Router IP Address is 10.0.15.181-184
 router_ip = os.environ.get("ROUTER_IP")
 
